@@ -11809,7 +11809,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify">The given dataset represents WIFI probe requests with a specific strength (values of the fr_values dictionaries) sent from 19 unique smartphones (represented by fr_mac_address_id) at a specific time (represented by fr_observation_time) to a set of 261 nodes (represented by the keys in fr_values) displaid at a specific location. That specific location has been divided in 449 different areas (represented by zo_name). <div></p>
+<p>The given dataset represents WIFI probe requests with a specific strength (values of the fr_values dictionaries) sent from 19 unique smartphones (represented by fr_mac_address_id) at a specific time (represented by fr_observation_time) to a set of 261 nodes (represented by the keys in fr_values) displaid at a specific location. That specific location has been divided in 449 different areas (represented by zo_name).</p>
 
 </div>
 </div>
@@ -11819,7 +11819,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify">The idea is to build a classifier that explains and predicts to which area is a Smartphone at a specific time given the different WIFI probe requests and their strengths. Also, you will notice that I voluntary removed the other variables from my explanatory variable set. Even though they could improve the model, my objective is to build a good classifier with the nodes informations.<div></p>
+<p>The idea is to build a classifier that explains and predicts to which area is a Smartphone at a specific time given the different WIFI probe requests and their strengths. Also, you will notice that I voluntary removed the other variables from my explanatory variable set. Even though they could improve the model, my objective is to build a good classifier with the nodes informations.</p>
 
 </div>
 </div>
@@ -11829,9 +11829,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify">However, unlike other classification tasks, here we want to predict 449 class. This makes the use of trees-based classifier obsolete. Nonetheless, we are lucky enough to have continuous data as explanatory variables in our dataset.<div></p>
-<p><div style="text-align: justify">I will therefore run a K-Nearest-Neighbours algorithm over the 261 variables (each representing a unique node). Still in the optic of making the model computationally efficient, there is a need of feature reduction.<div></p>
-<p><div style="text-align: justify">While I also tried LDA, the following notebook only displays code for PCA with 60 components as LDA was taking much more time to run for a similar output. Note that I also ran the KNN over the 261 variables and it did not significantly improved the model. <div></p>
+<p>However, unlike other classification tasks, here we want to predict 449 class. This makes the use of trees-based classifier obsolete. Nonetheless, we are lucky enough to have continuous data as explanatory variables in our dataset.
+I will therefore run a K-Nearest-Neighbours algorithm over the 261 variables (each representing a unique node). Still in the optic of making the model computationally efficient, there is a need of feature reduction.
+While I also tried LDA, the following notebook only displays code for PCA with 60 components as LDA was taking much more time to run for a similar output. Note that I also ran the KNN over the 261 variables and it did not significantly improved the model.</p>
 
 </div>
 </div>
@@ -12694,7 +12694,7 @@ AAAAAACAlCOkAgAAAAAAQMoRUgEAAAAAACDl/j8ddd6prY51EAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify">As it is the case in many classification problems, we have an imbalanced distribution in our target variable, with a majority of zo_name appearing between 400 and 1200 times. A few quantity of zo_name appears less than 400 times, and even a fewer appears more than 1200 times. These zo_name on the right side of the distribution are the most popular areas of our dataset whereas those on the left side are 'marginal' areas.<div></p>
+<p>As it is the case in many classification problems, we have an imbalanced distribution in our target variable, with a majority of zo_name appearing between 400 and 1200 times. A few quantity of zo_name appears less than 400 times, and even a fewer appears more than 1200 times. These zo_name on the right side of the distribution are the most popular areas of our dataset whereas those on the left side are 'marginal' areas.</p>
 
 </div>
 </div>
@@ -12713,7 +12713,7 @@ AAAAAACAlCOkAgAAAAAAQMoRUgEAAAAAACDl/j8ddd6prY51EAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify">The variable fr_values contains the node and signal strength of the device to that node for each fingerprints. I want to change the way the variable is displaid by having one serie representing one node with values of that serie representing the signal strength.<div></p>
+<p>The variable fr_values contains the node and signal strength of the device to that node for each fingerprints. I want to change the way the variable is displaid by having one serie representing one node with values of that serie representing the signal strength.</p>
 
 </div>
 </div>
@@ -14439,7 +14439,7 @@ AAAAAACAlCOkAgAAAAAAQMoRUgEAAAAAACDl/j8ddd6prY51EAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify">Now that we have our variables displaid correctly we will need to do some feature reduction, as my machine would take forever (3 hours) to run a KNN on that many number of variables.<div></p>
+<p>Now that we have our variables displaid correctly we will need to do some feature reduction, as my machine would take forever (3 hours) to run a KNN on that many number of variables.</p>
 
 </div>
 </div>
@@ -14458,7 +14458,7 @@ AAAAAACAlCOkAgAAAAAAQMoRUgEAAAAAACDl/j8ddd6prY51EAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify">Even though each node has its strength expressed in the same units it is good practice to standardized the values, as we could possibly expect nodes to perform differently and thus have different range of strength associated with it.<div></p>
+<p>Even though each node has its strength expressed in the same units it is good practice to standardized the values, as we could possibly expect nodes to perform differently and thus have different range of strength associated with it.</p>
 
 </div>
 </div>
@@ -14494,7 +14494,7 @@ AAAAAACAlCOkAgAAAAAAQMoRUgEAAAAAACDl/j8ddd6prY51EAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify">I choose the number of components by doing many trials. I started by running the KNN with all variables (so without PCA nor any feature reduction), which took approximately 3 hours on my machine. Then I decided to run a PCA, starting with a low number (5), and increasing the number as long as the results are improving without having an extraordinary long runtime. 60 components seemed to be the good compromise between a model performing almost as good as if I had kept all the variables and a model running in a decent amount of time (approx. 10 minutes).<div></p>
+<p>I choose the number of components by doing many trials. I started by running the KNN with all variables (so without PCA nor any feature reduction), which took approximately 3 hours on my machine. Then I decided to run a PCA, starting with a low number (5), and increasing the number as long as the results are improving without having an extraordinary long runtime. 60 components seemed to be the good compromise between a model performing almost as good as if I had kept all the variables and a model running in a decent amount of time (approx. 10 minutes).</p>
 
 </div>
 </div>
@@ -27434,7 +27434,7 @@ sBgKIQAAAAAAAIuhEAIAAAAAALAYCiEAAAAAAACL+f81jW8HJMLUewAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify"> Here I want to see if some zo_name are better classified according to their frequency, assuming the most represented areas are the best classified.<div></p>
+<p>Here I want to see if some zo_name are better classified according to their frequency, assuming the most represented areas are the best classified.</p>
 
 </div>
 </div>
@@ -29762,7 +29762,7 @@ I2wAAAAAAACEIDQCAAAAAABACEIjAAAAAAAAhCA0AgAAAAAAQAhCIwAAAAAAAIQgNAIAAAAAAECI
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="text-align: justify"> There is a strong relationship between the frequency of an area and its classification scores. However there still is a lot of variance amongst frequent areas. <div></p>
+<p>There is a strong relationship between the frequency of an area and its classification scores. However there still is a lot of variance amongst frequent areas.</p>
 
 </div>
 </div>
